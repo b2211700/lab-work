@@ -44,8 +44,13 @@ public class HomePage extends WebPage {
         var randLabel = new Label("rand", randModel);
         add(randLabel);
 
+        //　ユーザ追加を表示するlabel
         var toUserMakerLink = new BookmarkablePageLink<>("toUserMaker", UserMakerPage.class);
         add(toUserMakerLink);
+
+        //　ユーザーを削除するlabal
+        var removeUserLink = new BookmarkablePageLink<>("removeUser", UserDeletePage.class);
+        add(removeUserLink);
     }
 
 }

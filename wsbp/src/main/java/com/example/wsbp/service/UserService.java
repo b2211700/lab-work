@@ -18,6 +18,12 @@ public class UserService implements IUserService {
     public void registerUser(String userName, String userPass) {
         int n = authUserRepos.insert(userName, userPass);
         System.out.println("記録行数：" + n);
+
+    }
+    @Override
+    public void removeUser(String userName) {
+        int n = authUserRepos.delete(userName);
+        System.out.println("削除行数：" + n);
     }
 
 }

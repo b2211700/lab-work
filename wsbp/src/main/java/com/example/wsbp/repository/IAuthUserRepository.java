@@ -11,4 +11,6 @@ public interface IAuthUserRepository {
      */
     public int insert(String userName, String userPass);
 
+    public int delete(String userName);
+
 }
