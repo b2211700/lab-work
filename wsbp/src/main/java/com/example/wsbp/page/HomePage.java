@@ -1,8 +1,8 @@
 package com.example.wsbp.page;
 
+import com.example.wsbp.page.signed.ChatPage;
 import com.giffing.wicket.spring.boot.context.scan.WicketHomePage;
 import org.apache.wicket.markup.html.WebPage;
-import org.springframework.boot.Banner;
 import org.wicketstuff.annotation.mount.MountPath;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.model.Model;
@@ -51,6 +51,8 @@ public class HomePage extends WebPage {
         //　ユーザーを削除するlabal
         var removeUserLink = new BookmarkablePageLink<>("removeUser", UserDeletePage.class);
         add(removeUserLink);
+
+
     }
 
 }

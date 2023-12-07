@@ -1,0 +1,23 @@
+<html xmlns:wicket="http://wicket.apache.org">
+<head></head>
+<body>
+<h1>チャットページ</h1>
+<form action="#" wicket:id="chatInfo">
+    <div>ユーザー名：<input type="text" wicket:id="userName"/></div>
+    <div>メッセージ：<input type="text" wicket:id="msg_Body"/></div>
+    <div>
+        <button type="submit">送信</button>
+    </div>
+
+</form>
+
+<h2>チャット一覧</h2>
+<ol>
+    <li wicket:id="chats">
+        <span wicket:id="userName"></span>,
+        <span wicket:id="msg_Body"></span>
+    </li>
+</ol>
+
+</body>
+</html>
